@@ -1,98 +1,102 @@
-/* Section wrapper */
-.destinations {
+/* Container styling */
+.dest-section {
   padding: 4rem 1rem;
-  background-color: #eef4ff;
+  background: #f9f9f9;
 }
 
-/* Centered inner container */
-.destinations__container {
+.dest-container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* Section title with underline */
-.destinations__title {
-  text-align: center;
+.dest-title {
   font-size: 2rem;
-  color: #2563eb;
-  position: relative;
-  display: inline-block;
+  font-weight: 800;
   margin-bottom: 2rem;
 }
-.destinations__title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #2563eb;
-  margin: 0.5rem auto 0;
-}
 
-/* Responsive grid: 1col → 2col → 4col */
-.destinations__grid {
+/* Grid layout */
+.dest-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 640px) {
-  .destinations__grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1024px) {
-  .destinations__grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
-/* Individual card */
-.destination {
-  display: flex;
-  background: #fff;
-  border-radius: 8px;
+/* Card styling */
+.dest-card {
+  background-color: #fff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Image on the left */
-.destination__image {
-  width: 120px;
-  height: 120px;
+.dest-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.dest-img {
+  width: 100%;
+  height: 180px;
   object-fit: cover;
-  flex-shrink: 0;
+  display: block;
 }
 
-/* Textual body */
-.destination__body {
+/* Card body */
+.dest-content {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* City name */
-.destination__city {
-  margin: 0;
-  font-size: 1.125rem;
-  color: #1f2937;
+.dest-city {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-/* Badge */
-.destination__badge {
+.dest-badge {
   display: inline-block;
-  background-color: #ef4444;
-  color: #fff;
-  text-transform: uppercase;
+  background: #3b82f6; /* orange-500 */
+  color: white;
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  margin: 0.5rem 0 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
 }
 
-/* Subtitle text */
-.destination__text {
-  margin: 0.25rem 0 0;
-  font-size: 0.875rem;
-  color: #4b5563;
+.dest-offer {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dest-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .dest-img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dest-title {
+    font-size: 1.5rem;
+  }
+
+  .dest-img {
+    height: 140px;
+  }
+
+  .dest-city {
+    font-size: 1rem;
+  }
+
+  .dest-offer {
+    font-size: 0.85rem;
+  }
 }

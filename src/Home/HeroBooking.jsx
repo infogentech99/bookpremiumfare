@@ -1,6 +1,6 @@
 // src/Home/HeroBooking.jsx
 
-import react from 'react';
+// import react from 'react';
 import '../components/HeroBooking.css';
 
 
