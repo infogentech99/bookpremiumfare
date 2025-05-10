@@ -19,7 +19,7 @@ export default function Header() {
         </button>
         {/* Logo */}
         <Link to="/" className="header__logo">
-          <img src="/image/logo.webp" alt="Book Premium Fare" />
+          <img src="/image/logo.png" alt="Book Premium Fare" />
         </Link>
 
         {/* Desktop nav */}
