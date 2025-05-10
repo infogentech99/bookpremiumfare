@@ -1,11 +1,10 @@
 // src/Home/HeroBooking.jsx
 
-import React, { useState } from 'react'
+import { useState } from 'react';
 import '../style/HeroBooking.css';
 
 
 export default function HeroBooking() {
-  const [tripType, setTripType] = useState('round')
 
   return (
     <section className="hero-section">
