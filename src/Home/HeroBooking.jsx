@@ -1,7 +1,7 @@
 // src/components/HeroBooking.jsx
 
 import React, { useState } from 'react'
-import '../style/heroBooking.css';
+import '../style/HeroBooking.css';
 import {
   FaPlaneDeparture,
   FaPlaneArrival,
