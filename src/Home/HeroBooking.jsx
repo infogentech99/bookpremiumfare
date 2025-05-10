@@ -1,7 +1,8 @@
 // src/Home/HeroBooking.jsx
 
 // import react from 'react';
-import '../components/HeroBooking.css';
+import '../style/HeroBooking.css';
+import React from 'react';
 
 
 export default function HeroBooking() {
