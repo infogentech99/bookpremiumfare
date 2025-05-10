@@ -1,13 +1,8 @@
-// src/components/HeroBooking.jsx
+// src/Home/HeroBooking.jsx
 
 import React, { useState } from 'react'
 import '../style/HeroBooking.css';
-import {
-  FaPlaneDeparture,
-  FaPlaneArrival,
-  FaCalendarAlt,
-  FaUsers,
-} from 'react-icons/fa'
+
 
 export default function HeroBooking() {
   const [tripType, setTripType] = useState('round')
