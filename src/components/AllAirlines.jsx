@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import { AIRLINES } from '../data/airlines';
-import '../style/allAirlines.css';
+import "../style/AllAirlines.css";
 
 export default function AllAirlines() {
   return (
