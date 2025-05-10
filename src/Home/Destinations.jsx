@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/destinations.css';
+import '../style/DestinationList.css';
 
 // Replace these paths with your actual images under public/images/
 const DESTINATIONS = [
