@@ -1,7 +1,7 @@
 // src/Home/HeroBooking.jsx
 
-import { useState } from 'react';
-import '../style/HeroBooking.css';
+import react from 'react';
+import '../components/HeroBooking.css';
 
 
 export default function HeroBooking() {
