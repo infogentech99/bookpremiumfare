@@ -1,0 +1,49 @@
+.dest-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dest-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dest-card__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Mobile adjustments */
+@media (max-width: 1024px) {
+  .dest-list__grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .dest-list__grid {
+    grid-template-columns: 1fr; /* single column on small phones */
+    padding: 0.5rem;
+  }
+
+  .dest-card {
+    padding: 1rem;
+  }
+
+  .dest-card__name {
+    font-size: 1rem;
+  }
+}

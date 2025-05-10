@@ -1,0 +1,97 @@
+/* src/style/AboutUsPage.css */
+
+/*–– Variables (optional) ––*/
+:root {
+  --blue: #3b82f6;
+  --white: #ffffff;
+  --gray-bg: #f9fafb;
+  --text-dark: #111827;
+  --container-max: 1200px;
+}
+
+/*–– Page wrapper ––*/
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gray-bg);
+  color: var(--text-dark);
+}
+
+/*–– Hero / breadcrumb ––*/
+.about-page__hero {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3rem 1rem;
+}
+
+.about-page__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-page__title {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.about-page__breadcrumb {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+.about-page__breadcrumb a {
+  color: var(--white);
+  text-decoration: underline;
+}
+.about-page__breadcrumb span {
+  margin: 0 0.25rem;
+}
+
+/*–– Content ––*/
+.about-page__content {
+  flex: 1;
+  padding: 4rem 1rem;
+}
+
+.about-page__intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*–– Each sub-section ––*/
+.about-page__section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.about-page__subtitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/*–– Responsive typography ––*/
+@media (min-width: 640px) {
+  .about-page__title {
+    font-size: 3rem;
+  }
+  .about-page__intro,
+  .about-page__section p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page__container {
+    padding: 0 2rem;
+  }
+  .about-page__hero {
+    padding: 4rem 2rem;
+  }
+  .about-page__content {
+    padding: 6rem 2rem;
+  }
+}

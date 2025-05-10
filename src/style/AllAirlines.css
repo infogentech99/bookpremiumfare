@@ -1,0 +1,125 @@
+/* src/components/AllAirlines.css */
+.all-airlines {
+  font-family: sans-serif;
+  color: #1f2937;
+  background: #fff;
+}
+
+/* Hero */
+.all-airlines__hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.all-airlines__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.all-airlines__hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.all-airlines__hero-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.all-airlines__hero-subtitle {
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+/* Container & heading */
+.all-airlines__container {
+  max-width: 1200px;
+  margin: 2.5rem auto 4rem;
+  padding: 0 1rem;
+}
+.all-airlines__heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+.all-airlines__heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2563eb;
+  margin: 0.5rem auto 0;
+}
+
+/* Grid: 1 → 2 → 3 cols */
+.all-airlines__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .all-airlines__grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .all-airlines__grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Card */
+.airlines-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+.airlines-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image */
+.airlines-card__image {
+  flex: 1;
+}
+.airlines-card__img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer */
+.airlines-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.airlines-card__name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.airlines-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fed7d7;
+  color: #c53030;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}

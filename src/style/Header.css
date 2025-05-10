@@ -1,0 +1,160 @@
+:root {
+  --white: #dfe7fd;
+  --dark: #111;
+  --blue: #3367d6;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+/* Base header */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0 2px 4px var(--shadow);
+  z-index: 1000;
+}
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 1rem;
+}
+
+.header__logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Desktop nav */
+.header__nav-desktop {
+  margin-left: 2rem;
+  flex: 1;
+}
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__list a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav__list a:hover {
+  color: var(--blue);
+}
+
+/* Contact block */
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__contact small {
+  display: block;
+  font-size: 0.75rem;
+  color: #555;
+}
+.header__contact a {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* Mobile toggle hidden on desktop */
+.header__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* Overlay menu (mobile only) */
+.header__overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 90%; height: 100vh;
+  background: var(--white);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+.header__overlay.open {
+  transform: translateX(0);
+}
+.header__close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.overlay__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.overlay__list a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.overlay__contact {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+.overlay__contact small {
+  display: block;
+  font-size: 0.75rem;
+  color: #555;
+}
+.overlay__contact a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .header__nav-desktop,
+  .header__contact {
+    display: none;
+  }
+  .header__toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header__overlay {
+    display: none;
+  }
+}

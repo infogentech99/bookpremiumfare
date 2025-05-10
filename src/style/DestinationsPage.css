@@ -1,0 +1,19 @@
+.destinations-page__main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.destinations-page__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Smaller headings on mobile */
+@media (max-width: 768px) {
+  .destinations-page__title {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
