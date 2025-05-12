@@ -1,14 +1,14 @@
 // src/data/destinations.js
 export const DESTINATIONS = [
-  { name: 'Chicago',        slug: 'chicago' },
-  { name: 'Seattle',        slug: 'seattle' },
-  { name: 'San Diego',      slug: 'san-diego' },
-  { name: 'Houston',        slug: 'houston' },
-  { name: 'Miami',          slug: 'miami' },
-  { name: 'New York',       slug: 'new-york' },
-  { name: 'Los Angeles',    slug: 'los-angeles' },
-  { name: 'Orlando',        slug: 'orlando' },
-  { name: 'San Francisco',  slug: 'san-francisco' },
-  { name: 'Boston',         slug: 'boston' },
+  { name: 'Chicago',        slug: '' },
+  { name: 'Seattle',        slug: '' },
+  { name: 'San Diego',      slug: '' },
+  { name: 'Houston',        slug: '' },
+  { name: 'Miami',          slug: '' },
+  { name: 'New York',       slug: '' },
+  { name: 'Los Angeles',    slug: '' },
+  { name: 'Orlando',        slug: '' },
+  { name: 'San Francisco',  slug: '' },
+  { name: 'Boston',         slug: '' },
   // …add more as needed
 ];

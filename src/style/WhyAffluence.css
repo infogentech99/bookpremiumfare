@@ -1,133 +1,82 @@
-/* Section wrapper */
+/* src/style/WhyAffluence.css */
+
 .why {
-  padding: 4rem 1rem;
-  background-color: #f9f9f9;
+  background: #fff;
+  padding: 2rem 1rem;
 }
 
-/* Centered container */
 .why__container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Title with underline */
 .why__title {
   text-align: center;
   font-size: 2rem;
-  color: #2563eb;
-  position: relative;
-  display: inline-block;
+  font-weight: 700;
   margin-bottom: 2rem;
+  color: #111827;
+  position: relative;
 }
+/* 
 .why__title::after {
   content: '';
   display: block;
   width: 60px;
-  height: 4px;
-  background-color: #2563eb;
+  height: 3px;
+  background: #2563eb;
   margin: 0.5rem auto 0;
-}
+} */
 
-/* Layout: stack on mobile, side-by-side on desktop */
 .why__inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 2rem;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
   .why__inner {
     flex-direction: row;
-    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  /* 50/50 split */
+  .why__features,
+  .why__promo {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-/* Features column */
 .why__features {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex: 2;
 }
 
-/* Single feature card */
 .feature {
-  display: flex;
-  align-items: flex-start;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
 }
-.feature__icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 1rem;
-  flex-shrink: 0;
-}
-.feature__body {
-  flex: 1;
-}
+
 .feature__title {
-  margin: 0;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
   color: #1f2937;
 }
+
 .feature__desc {
-  margin: 0.25rem 0 0;
-  font-size: 1.12rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 19px;
   color: #4b5563;
 }
 
-/* Promo column */
 .why__promo {
   flex: 1;
-  background: linear-gradient(to bottom, #fbbf24 0%, #3b82f6 100%);
-  border-radius: 16px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  color: #fff;
-}
-.promo__text {
-  z-index: 1;
-}
-.promo__headline {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-.promo__subline {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.promo__call-label {
-  display: block;
-  font-size: 0.9rem;
-}
-.promo__phone {
-  display: block;
-  font-size: 1.125rem;
-  font-weight: 700;
-  margin-top: 0.25rem;
-  color: #fff;
-  text-decoration: none;
 }
 
-/* Promo graphic at bottom */
 .promo__graphic {
-  width: 100%;
-  max-width: 280px;
-  margin-top: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Responsive tweaks */
-@media (max-width: 767px) {
-  .promo__graphic {
-    max-width: 100%;
-  }
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }

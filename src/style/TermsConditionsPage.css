@@ -1,0 +1,105 @@
+/* src/style/TermsConditionsPage.css */
+
+/* Variables */
+:root {
+  --blue: #3b82f6;
+  --white: #ffffff;
+  --gray-bg: #f9fafb;
+  --text-dark: #1f2937;
+  --container-max: 1200px;
+}
+
+/* Page wrapper */
+.terms-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gray-bg);
+  color: var(--text-dark);
+}
+
+/* Hero / Breadcrumb */
+.terms-page__hero {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.terms-page__title {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.terms-page__breadcrumb {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.terms-page__breadcrumb a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.terms-page__breadcrumb span {
+  margin: 0 0.25rem;
+}
+
+/* Intro paragraph */
+.terms-page__content {
+  flex: 1;
+  padding: 4rem 1rem;
+}
+
+.terms-page__intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Each terms section */
+.terms-section {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.terms-section__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.terms-section__text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (min-width: 640px) {
+  .terms-page__title {
+    font-size: 3rem;
+  }
+  .terms-page__intro,
+  .terms-section__text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+  .terms-page__hero {
+    padding: 4rem 2rem;
+  }
+  .terms-page__content {
+    padding: 6rem 2rem;
+  }
+}

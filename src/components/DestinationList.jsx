@@ -9,7 +9,7 @@ export default function DestinationList() {
       {DESTINATIONS.map(({ name, slug }) => (
         <Link
           key={slug}
-          to={`/destinations/${slug}`}
+          to={`/destination/${slug}`}
           className="dest-card"
         >
           <span className="dest-card__name">{name}</span>

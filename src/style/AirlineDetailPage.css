@@ -1,0 +1,186 @@
+/* Page wrapper */
+.airline-detail-page {
+  background: #f3f4f6;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Banner */
+.airline-banner {
+  position: relative;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.airline-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.airline-banner__content {
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+}
+.airline-banner__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+/* Content Card */
+.airline-content-wrapper {
+  background: #ffffff;
+  padding: 2rem 10rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Intro paragraph */
+.airline-intro {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+/* Section headings */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.25rem;
+}
+
+/* Sections */
+.airline-section {
+  margin-bottom: 2rem;
+}
+
+.section-body {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+/* Lists */
+.section-list {
+  list-style: decimal inside;
+  margin-top: 0.5rem;
+  color: #374151;
+}
+.section-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+.faq-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.faq-question {
+  display: block;
+  font-size: 1rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+.faq-answer {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 640px) {
+  .airline-banner {
+    height: 200px;
+  }
+  .airline-banner__title {
+    font-size: 1.75rem;
+  }
+  .airline-title {
+    font-size: 1.875rem;
+  }
+  .section-heading {
+    font-size: 1.25rem;
+  }
+  .airline-content-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 2rem;
+}
+
+/* Container for all FAQ items */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Individual FAQ card */
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Clickable question row */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111827;
+  transition: background 0.2s ease;
+}
+.faq-question:hover {
+  background: #f3f4f6;
+}
+
+/* Icon in the question */
+.faq-icon {
+  font-size: 1rem;
+  color: #2563eb;
+  transition: transform 0.2s ease;
+}
+
+/* Answer text, shown only when FAQ is open */
+.faq-answer {
+  padding: 0 1rem 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 0 0.75rem 0.75rem;
+  }
+}

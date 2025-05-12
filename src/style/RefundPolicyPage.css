@@ -1,0 +1,99 @@
+
+
+:root {
+  --blue: #3b82f6;
+  --white: #ffffff;
+  --gray-bg: #f9fafb;
+  --text-dark: #1f2937;
+  --container-max: 1200px;
+}
+
+.refund-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gray-bg);
+  color: var(--text-dark);
+}
+
+.refund-page__hero {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.refund-page__title {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.refund-page__breadcrumb {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.refund-page__breadcrumb a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.refund-page__breadcrumb span {
+  margin: 0 0.25rem;
+}
+
+.refund-page__content {
+  flex: 1;
+  padding: 4rem 1rem;
+}
+
+.refund-page__intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.refund-section {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.refund-section__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.refund-section__text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .refund-page__title {
+    font-size: 3rem;
+  }
+  .refund-page__intro,
+  .refund-section__text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+  .refund-page__hero {
+    padding: 4rem 2rem;
+  }
+  .refund-page__content {
+    padding: 6rem 2rem;
+  }
+}

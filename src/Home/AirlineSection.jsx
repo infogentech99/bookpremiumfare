@@ -6,30 +6,30 @@ const BLOGS = [
     id: 1,
     previewImg: '/airline/Atlanta.webp',
     thumbImg:   '/airline/Atlanta.webp',
-    title:      'What Should You Know About Swiss Air Baggage Policy?',
-    link:       '/blog/swiss-air-baggage-policy',
+    title:      'How to Book a British Airlines Ticket?',
+    link:       '/airlines/how-to-book-british-airlines-flight-ticket',
   },
   {
     id: 2,
     previewImg: '/airline/Chicago.webp',
     thumbImg:   '/airline/Chicago.webp',
-    title:      'Frequently Asked Questions About SWISS Air Flights',
-    link:       '/blog/swiss-air-faq',
+    title:      'What to Know Before Flying with Delta Airlines',
+    link:       '/airlines/why-fly-with-singapore-airlines',
   },
   {
     id: 3,
     previewImg: '/airline/Boston.webp',
     thumbImg:   '/airline/Boston.webp',
-    title:      'Frequently Asked Questions About Norse Atlantic Airways',
-    link:       '/blog/norse-atlantic-faq',
+    title:      'Emirates Fare Classes Explained: Special, Saver, Flex',
+    link:       '/airlines/emirates-fare-classes',
   },
 ];
 
-export default function BlogSection() {
+export default function AirlineSection() {
   return (
     <section className="blog-section">
       <div className="blog-section__container">
-        <h2 className="blog-section__title">Our Travel Blog</h2>
+        <h2 className="blog-section__title">Our Airlines</h2>
 
         <div className="blog-grid">
           {BLOGS.map(({ id, previewImg, thumbImg, title, link }) => (
@@ -57,8 +57,8 @@ export default function BlogSection() {
         </div>
 
         <div className="blog-section__more">
-          <a href="/blog" className="blog-section__more-link">
-            View more blogs →
+          <a href="/airlines" className="blog-section__more-link">
+            View more airlines →
           </a>
         </div>
       </div>

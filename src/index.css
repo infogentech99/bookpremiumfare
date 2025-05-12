@@ -1,3 +1,12 @@
+/* at the very top of src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* then below your Tailwind base imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* override the default sans font */
+html, body {
+  font-family: 'Inter', sans-serif;
+}

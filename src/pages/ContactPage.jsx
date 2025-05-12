@@ -113,7 +113,7 @@ export default function ContactPage() {
           </p>
           <ul className="cu-contact-details">
             <li><FaPhoneAlt /> <a href="tel:+18888291141">+1-888-829-1141</a></li>
-            <li><FaEnvelope /> <a href="mailto:info@affluencetravels.com">info@affluencetravels.com</a></li>
+            <li><FaEnvelope /> <a href="mailto:info@bookpremiumfare.com">info@bookpremiumfare.com/</a></li>
             <li><FaMapMarkerAlt /> 1820 Avenue M #491, Brooklyn, NY 11230</li>
           </ul>
           <div className="cu-social">

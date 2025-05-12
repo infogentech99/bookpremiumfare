@@ -2,10 +2,10 @@ import React from "react";
 import "../style/Destinations.css";
 
 const DESTINATIONS = [
-  { city: "Chicago", img: "/image/chicago.webp" },
+  { city: "Chicago", img: "/image/chicago.jpg" },
   { city: "Seattle", img: "/image/seattle.webp" },
-  { city: "San Diego", img: "/image/san-diego.webp" },
-  { city: "Houston", img: "/image/housto.webp" },
+  { city: "San Diego", img: "/image/san-diego.avif" },
+  { city: "Houston", img: "/image/housto.jpg" },
 ];
 
 export default function Destinations() {
