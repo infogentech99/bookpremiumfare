@@ -2,7 +2,7 @@
 .site-footer {
   background: #0d0d0d;             /* dark background */
   color: #e0e0e0;                  /* default body text */
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: sans-serif;
   margin-top: 4rem;
 }
 

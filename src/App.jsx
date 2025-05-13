@@ -25,13 +25,15 @@ export default function App() {
         {/* Dynamic detail route */}
         <Route path="/airlines/:slug" element={<AirlineDetailPage />} />
          <Route path="/destination"       element={<DestinationsPage />} />
-        <Route path="/destinations/:slug" element={<DestinationDetailPage />} />
+        <Route path="/destination/:slug" element={<DestinationDetailPage />} />
         
         <Route path="/about" element={<AboutUsPage/>}/>
          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
            <Route path="/terms" element={<TermsConditionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/refund" element={<RefundPolicyPage />} />
+<Route path="/destination/:slug" element={<DestinationDetailPage />} />
+
 
         {/* catch-all 404 */}
         {/* <Route path="*" element={<NotFoundPage />} /> */}

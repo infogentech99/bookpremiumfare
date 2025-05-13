@@ -1,6 +1,6 @@
 // src/data/destinations.js
 export const DESTINATIONS = [
-  { name: 'Chicago',        slug: '' },
+  { name: 'Chicago',        slug: 'chicago' },
   { name: 'Seattle',        slug: '' },
   { name: 'San Diego',      slug: '' },
   { name: 'Houston',        slug: '' },

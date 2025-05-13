@@ -3,11 +3,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Home/Header';
 import Footer from '../Home/Footer';
+import PageMeta from '../components/PageMeta';
 import '../style/AboutUsPage.css';
 
 export default function AboutUsPage() {
   return (
     <div className="about-page">
+        <PageMeta
+        title="Contact Us – BookPremiumFare"
+        description="Get in touch with BookPremiumFare for any booking support or inquiries."
+        keywords="contact, support, booking help"
+      />
       <Header />
 
       {/* Hero / Breadcrumb */}
