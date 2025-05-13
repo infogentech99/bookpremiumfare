@@ -29,7 +29,7 @@ export default function App() {
         
         <Route path="/about" element={<AboutUsPage/>}/>
          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-           <Route path="/terms" element={<TermsConditionsPage />} />
+           <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/refund" element={<RefundPolicyPage />} />
 <Route path="/destination/:slug" element={<DestinationDetailPage />} />

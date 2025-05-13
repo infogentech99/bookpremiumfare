@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import Header from '../Home/Header';
 import Footer from '../Home/Footer';
@@ -17,11 +16,7 @@ export default function DestinationDetailPage() {
 
   return (
     <div className="destination-detail-page">
-      <Helmet>
-        <title>{detail.metaTitle}</title>
-        <meta name="description" content={detail.metaDescription} />
-        <meta name="keywords"    content={detail.metaKeywords} />
-      </Helmet>
+   
 
       <Header />
 

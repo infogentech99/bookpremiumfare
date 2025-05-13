@@ -36,7 +36,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/terms" onClick={handleLinkClick}>
+              <Link to="/terms-and-conditions" onClick={handleLinkClick}>
                 Terms &amp; Conditions
               </Link>
             </li>
